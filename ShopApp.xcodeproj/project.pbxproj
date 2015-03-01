@@ -14,6 +14,19 @@
 		027606C91A8FB299008A993B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027606C81A8FB299008A993B /* Images.xcassets */; };
 		027606CC1A8FB299008A993B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027606CA1A8FB299008A993B /* LaunchScreen.xib */; };
 		027606D81A8FB299008A993B /* ShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606D71A8FB299008A993B /* ShopAppTests.swift */; };
+		027606E21A8FB503008A993B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606E11A8FB503008A993B /* CustomCell.swift */; };
+		027606E61A8FBBCD008A993B /* candle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606E51A8FBBCD008A993B /* candle.jpeg */; };
+		027606E81A8FBED4008A993B /* necklace.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606E71A8FBED4008A993B /* necklace.jpeg */; };
+		027606EA1A8FD527008A993B /* lipstick.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606E91A8FD527008A993B /* lipstick.jpeg */; };
+		027606EC1A8FD6A5008A993B /* blouse.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606EB1A8FD6A5008A993B /* blouse.jpeg */; };
+		027606F01A901843008A993B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606EF1A901843008A993B /* ThirdViewController.swift */; };
+		027606F31A91031C008A993B /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606F21A91031C008A993B /* FourthViewController.swift */; };
+		027606FC1A91492F008A993B /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606FB1A91492F008A993B /* CartCell.swift */; };
+		027606FE1A914B51008A993B /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606FD1A914B51008A993B /* FifthViewController.swift */; };
+		02EDD42F1A918C9700180D4F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EDD42E1A918C9700180D4F /* CoreData.framework */; };
+		02EDD4331A918F1200180D4F /* ShopAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD4311A918F1200180D4F /* ShopAppModel.xcdatamodeld */; };
+		02EDD4371A92E00900180D4F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD4361A92E00900180D4F /* DataController.swift */; };
+		02EDD43B1A94457800180D4F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD43A1A94457800180D4F /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +51,19 @@
 		027606D11A8FB299008A993B /* ShopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		027606D61A8FB299008A993B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027606D71A8FB299008A993B /* ShopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAppTests.swift; sourceTree = "<group>"; };
+		027606E11A8FB503008A993B /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		027606E51A8FBBCD008A993B /* candle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candle.jpeg; sourceTree = "<group>"; };
+		027606E71A8FBED4008A993B /* necklace.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = necklace.jpeg; sourceTree = "<group>"; };
+		027606E91A8FD527008A993B /* lipstick.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lipstick.jpeg; sourceTree = "<group>"; };
+		027606EB1A8FD6A5008A993B /* blouse.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blouse.jpeg; sourceTree = "<group>"; };
+		027606EF1A901843008A993B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		027606F21A91031C008A993B /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		027606FB1A91492F008A993B /* CartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		027606FD1A914B51008A993B /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		02EDD42E1A918C9700180D4F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		02EDD4321A918F1200180D4F /* ShopAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShopAppModel.xcdatamodel; sourceTree = "<group>"; };
+		02EDD4361A92E00900180D4F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		02EDD43A1A94457800180D4F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EDD42F1A918C9700180D4F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +107,15 @@
 			isa = PBXGroup;
 			children = (
 				027606BF1A8FB299008A993B /* AppDelegate.swift */,
-				027606C11A8FB299008A993B /* FirstViewController.swift */,
-				027606C31A8FB299008A993B /* SecondViewController.swift */,
+				027606F11A9101EE008A993B /* Feed Area */,
+				027606F61A9105EA008A993B /* Friends Ares */,
+				027606F71A9105FD008A993B /* Add A Deriv Area */,
+				027606F81A910634008A993B /* Profile Area */,
+				027606FA1A91064F008A993B /* Cart Area */,
 				027606C51A8FB299008A993B /* Main.storyboard */,
+				02EDD4311A918F1200180D4F /* ShopAppModel.xcdatamodeld */,
+				02EDD43A1A94457800180D4F /* Product.swift */,
+				02EDD4301A918CB500180D4F /* Frameworks */,
 				027606C81A8FB299008A993B /* Images.xcassets */,
 				027606CA1A8FB299008A993B /* LaunchScreen.xib */,
 				027606BD1A8FB299008A993B /* Supporting Files */,
@@ -93,6 +126,10 @@
 		027606BD1A8FB299008A993B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				027606E51A8FBBCD008A993B /* candle.jpeg */,
+				027606E71A8FBED4008A993B /* necklace.jpeg */,
+				027606E91A8FD527008A993B /* lipstick.jpeg */,
+				027606EB1A8FD6A5008A993B /* blouse.jpeg */,
 				027606BE1A8FB299008A993B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +150,58 @@
 				027606D61A8FB299008A993B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		027606F11A9101EE008A993B /* Feed Area */ = {
+			isa = PBXGroup;
+			children = (
+				027606C11A8FB299008A993B /* FirstViewController.swift */,
+				02EDD4361A92E00900180D4F /* DataController.swift */,
+				027606E11A8FB503008A993B /* CustomCell.swift */,
+			);
+			name = "Feed Area";
+			sourceTree = "<group>";
+		};
+		027606F61A9105EA008A993B /* Friends Ares */ = {
+			isa = PBXGroup;
+			children = (
+				027606C31A8FB299008A993B /* SecondViewController.swift */,
+			);
+			name = "Friends Ares";
+			sourceTree = "<group>";
+		};
+		027606F71A9105FD008A993B /* Add A Deriv Area */ = {
+			isa = PBXGroup;
+			children = (
+				027606EF1A901843008A993B /* ThirdViewController.swift */,
+			);
+			name = "Add A Deriv Area";
+			sourceTree = "<group>";
+		};
+		027606F81A910634008A993B /* Profile Area */ = {
+			isa = PBXGroup;
+			children = (
+				027606F21A91031C008A993B /* FourthViewController.swift */,
+			);
+			name = "Profile Area";
+			sourceTree = "<group>";
+		};
+		027606FA1A91064F008A993B /* Cart Area */ = {
+			isa = PBXGroup;
+			children = (
+				027606FD1A914B51008A993B /* FifthViewController.swift */,
+				027606FB1A91492F008A993B /* CartCell.swift */,
+			);
+			name = "Cart Area";
+			sourceTree = "<group>";
+		};
+		02EDD4301A918CB500180D4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02EDD42E1A918C9700180D4F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +284,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027606E81A8FBED4008A993B /* necklace.jpeg in Resources */,
+				027606EC1A8FD6A5008A993B /* blouse.jpeg in Resources */,
 				027606C71A8FB299008A993B /* Main.storyboard in Resources */,
 				027606CC1A8FB299008A993B /* LaunchScreen.xib in Resources */,
+				027606E61A8FBBCD008A993B /* candle.jpeg in Resources */,
+				027606EA1A8FD527008A993B /* lipstick.jpeg in Resources */,
 				027606C91A8FB299008A993B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027606FE1A914B51008A993B /* FifthViewController.swift in Sources */,
 				027606C41A8FB299008A993B /* SecondViewController.swift in Sources */,
 				027606C01A8FB299008A993B /* AppDelegate.swift in Sources */,
+				027606F31A91031C008A993B /* FourthViewController.swift in Sources */,
+				02EDD4331A918F1200180D4F /* ShopAppModel.xcdatamodeld in Sources */,
+				02EDD43B1A94457800180D4F /* Product.swift in Sources */,
+				02EDD4371A92E00900180D4F /* DataController.swift in Sources */,
+				027606E21A8FB503008A993B /* CustomCell.swift in Sources */,
+				027606F01A901843008A993B /* ThirdViewController.swift in Sources */,
+				027606FC1A91492F008A993B /* CartCell.swift in Sources */,
 				027606C21A8FB299008A993B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +512,7 @@
 				027606DD1A8FB299008A993B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		027606DE1A8FB299008A993B /* Build configuration list for PBXNativeTarget "ShopAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,8 +521,22 @@
 				027606E01A8FB299008A993B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02EDD4311A918F1200180D4F /* ShopAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02EDD4321A918F1200180D4F /* ShopAppModel.xcdatamodel */,
+			);
+			currentVersion = 02EDD4321A918F1200180D4F /* ShopAppModel.xcdatamodel */;
+			path = ShopAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 027606B21A8FB298008A993B /* Project object */;
 }
