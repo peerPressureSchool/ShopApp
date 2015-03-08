@@ -35,6 +35,16 @@ class CustomCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        // Configure the view for the selected state
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.addGestureRecognizer(swipeRight)
+        
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.addGestureRecognizer(swipeLeft)
+        
     }
 
     //populate the cell
@@ -51,4 +61,22 @@ class CustomCell: UITableViewCell {
 
     //actions
     
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                println(self.productNameLabel.text)
+                //write code to add to cart
+                //write code to drag cell while swiping
+            case UISwipeGestureRecognizerDirection.Left:
+                println("Swiped left")
+                //write code to add to share
+                //write code to drag cell while swiping
+            default:
+                break
+            }
+        }
+    }
 }

@@ -67,54 +67,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-    //swipe right to add to add to cart
-    
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-    }
-    
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
-        // 1
-        var addToCartAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Add to Cart" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-            
-            // 2 Adds products to Cart Array...refactor once cart created on cart VC to add/remove value there
-            
-            let sku = self.apiSearchForBestBuyProducts[indexPath.row].sku
-            self.dataController.saveBestBuyItemForSku(sku, json: self.jsonResponse)
-         
-
-            
-            
-            
-//            let shareMenu = UIAlertController(title: nil, message: "Share using", preferredStyle: .ActionSheet)
-//            
-//            let twitterAction = UIAlertAction(title: "Twitter", style: UIAlertActionStyle.Default, handler: nil)
-//            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
-//            
-//            shareMenu.addAction(twitterAction)
-//            shareMenu.addAction(cancelAction)
-//            
-//            
-//            self.presentViewController(shareMenu, animated: true, completion: nil)
-        })
-        // 3
-//        var rateAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Rate" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-//            // 4
-//            let rateMenu = UIAlertController(title: nil, message: "Rate this App", preferredStyle: .ActionSheet)
-//            
-//            let appRateAction = UIAlertAction(title: "Rate", style: UIAlertActionStyle.Default, handler: nil)
-//            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
-//            
-//            rateMenu.addAction(appRateAction)
-//            rateMenu.addAction(cancelAction)
-//            
-//            
-//            self.presentViewController(rateMenu, animated: true, completion: nil)
-//        })
-        // 5
-        return [addToCartAction]
-    }
-
+    //make the api call to get products from best buy
     
     func makeRequest () {
         
