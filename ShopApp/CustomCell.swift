@@ -40,18 +40,15 @@ class CustomCell: UITableViewCell {
     //populate the cell
     
     func setCell(productNameLabelText: String, productPriceLabelText: Double, productImageName: UIImage, productDescriptionLabelText: String) {
-        
+                
         self.productNameLabel.text = productNameLabelText
         self.productPriceLabel.text = "$\(productPriceLabelText)"
         self.productImage.image = productImageName
         self.productImage.contentMode = .ScaleAspectFit
         self.productDescriptionLabel.text = productDescriptionLabelText
         
-    }
-    
-    
+        }
+
     //actions
-    
-    
     
 }

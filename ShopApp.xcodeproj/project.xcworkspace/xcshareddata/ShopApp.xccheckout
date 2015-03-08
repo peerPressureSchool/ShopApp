@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3FA1094C-3C7B-4C12-B1EF-EFB5BB4D7998</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShopApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B68F0A1444FD1F80719FF9022B1A7929C52794C7</key>
+		<string>https://github.com/peerPressureSchool/ShopApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShopApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B68F0A1444FD1F80719FF9022B1A7929C52794C7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/peerPressureSchool/ShopApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B68F0A1444FD1F80719FF9022B1A7929C52794C7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B68F0A1444FD1F80719FF9022B1A7929C52794C7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShopApp%20copy</string>
+		</dict>
+	</array>
+</dict>
+</plist>

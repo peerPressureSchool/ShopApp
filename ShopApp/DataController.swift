@@ -22,15 +22,14 @@ class DataController {
             
             for productDiciontary in results {
                 
-                if productDiciontary["sku"] != nil  {
+                if productDiciontary["sku"] != nil && productDiciontary["longDescription"] != nil {
                     
                     let name: String = productDiciontary["name"]! as String
                     let sku: Int = productDiciontary["sku"]! as Int
                     let skuString = String(sku)
                     
                     let productDesc: String = productDiciontary["longDescription"]! as String
-                   
-                    
+
                     
                     let price: Double = productDiciontary["regularPrice"]! as Double
                     
@@ -43,10 +42,9 @@ class DataController {
                     bestBuyProductPullArray += [pullResult]
                     
                 }
-                
             }
-            
         }
+        
         return bestBuyProductPullArray
     }
     
@@ -112,13 +110,8 @@ class DataController {
                         (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
                         
                     }
-                    
                 }
-                
             }
-        
         }
-        
     }
-    
 }

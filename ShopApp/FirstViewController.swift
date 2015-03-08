@@ -62,7 +62,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as CustomCell
         cell.selectionStyle = .None
         
-       cell.setCell(apiSearchForBestBuyProducts[indexPath.row].name, productPriceLabelText: apiSearchForBestBuyProducts[indexPath.row].price, productImageName: apiSearchForBestBuyProducts[indexPath.row].imgUrl, productDescriptionLabelText: apiSearchForBestBuyProducts[indexPath.row].productDesc)
+        cell.setCell(apiSearchForBestBuyProducts[indexPath.row].name, productPriceLabelText: apiSearchForBestBuyProducts[indexPath.row].price, productImageName: apiSearchForBestBuyProducts[indexPath.row].imgUrl, productDescriptionLabelText: apiSearchForBestBuyProducts[indexPath.row].productDesc)
         
         return cell
     }
@@ -76,10 +76,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
         // 1
         var addToCartAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Add to Cart" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            
             // 2 Adds products to Cart Array...refactor once cart created on cart VC to add/remove value there
             
-           let sku = self.apiSearchForBestBuyProducts[indexPath.row].sku
-           self.dataController.saveBestBuyItemForSku(sku, json: self.jsonResponse)
+            let sku = self.apiSearchForBestBuyProducts[indexPath.row].sku
+            self.dataController.saveBestBuyItemForSku(sku, json: self.jsonResponse)
          
 
             

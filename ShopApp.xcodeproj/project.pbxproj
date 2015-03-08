@@ -27,6 +27,7 @@
 		02EDD4331A918F1200180D4F /* ShopAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD4311A918F1200180D4F /* ShopAppModel.xcdatamodeld */; };
 		02EDD4371A92E00900180D4F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD4361A92E00900180D4F /* DataController.swift */; };
 		02EDD43B1A94457800180D4F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD43A1A94457800180D4F /* Product.swift */; };
+		A124B9371AAA0F450014A23C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124B9361AAA0F450014A23C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		02EDD4321A918F1200180D4F /* ShopAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShopAppModel.xcdatamodel; sourceTree = "<group>"; };
 		02EDD4361A92E00900180D4F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		02EDD43A1A94457800180D4F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../Product.swift; sourceTree = "<group>"; };
+		A124B9361AAA0F450014A23C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				027606BF1A8FB299008A993B /* AppDelegate.swift */,
+				A124B9381AAA0F4D0014A23C /* Login Area */,
 				027606F11A9101EE008A993B /* Feed Area */,
 				027606F61A9105EA008A993B /* Friends Ares */,
 				027606F71A9105FD008A993B /* Add A Deriv Area */,
@@ -202,6 +205,14 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A124B9381AAA0F4D0014A23C /* Login Area */ = {
+			isa = PBXGroup;
+			children = (
+				A124B9361AAA0F450014A23C /* LoginViewController.swift */,
+			);
+			name = "Login Area";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A124B9371AAA0F450014A23C /* LoginViewController.swift in Sources */,
 				027606FE1A914B51008A993B /* FifthViewController.swift in Sources */,
 				027606C41A8FB299008A993B /* SecondViewController.swift in Sources */,
 				027606C01A8FB299008A993B /* AppDelegate.swift in Sources */,
