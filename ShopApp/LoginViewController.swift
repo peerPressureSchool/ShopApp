@@ -30,8 +30,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.loginImageView.image = images[0]
 //        self.loginImageView.frame = CGRectMake(0,0,100,100)
-        self.loginImageView.image = images[0]
 //        self.loginImageView.contentMode = .ScaleAspectFit
         
         configurePageControl()
@@ -60,8 +60,7 @@ class LoginViewController: UIViewController {
         
         pageControl.numberOfPages = images.count
         pageControl.currentPage = 0
-        self.loginImageView.image = images[pageControl.currentPage]
-
+        self.loginImageView.image = images[pageControl.currentPage]        
         
         pageControl.tintColor = UIColor.blueColor()
         pageControl.pageIndicatorTintColor = UIColor.greenColor()
@@ -71,14 +70,6 @@ class LoginViewController: UIViewController {
     }
 
     
-    // MARK: Actions
-    
-//    func pageControlValueDidChange() {
-//        NSLog("The page control changed its current page to \(pageControl.currentPage).")
-//
-//        self.loginImageView.image = images[pageControl.currentPage]
-//
-//    }
     
     
     // MARK: Recognize Swipe
@@ -100,8 +91,12 @@ class LoginViewController: UIViewController {
             
             default:
                 break
+                
             }
         }
+    
+        self.loginImageView.image = images[pageControl.currentPage]
+    
     }
     
     
