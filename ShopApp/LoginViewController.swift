@@ -103,11 +103,6 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
     }
 
     
-<<<<<<< HEAD
-    
-    
-=======
->>>>>>> borisBranch
     // MARK: Recognize Swipe
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
