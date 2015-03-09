@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Feed-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ShopApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +123,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="myTableView" destination="Hlv-cg-ix0" id="dod-OS-QUG"/>
                     </connections>
@@ -132,7 +132,7 @@
             </objects>
             <point key="canvasLocation" x="630" y="-1102"/>
         </scene>
-        <!--Second-->
+        <!--Friends-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ShopApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -160,13 +160,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1486" y="-884"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Add Friends-->
         <scene sceneID="Hvg-3G-1d5">
             <objects>
                 <viewController id="pcG-gV-bLg" customClass="ThirdViewController" customModule="ShopApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,14 +179,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="9Yo-69-RdH"/>
+                    <tabBarItem key="tabBarItem" title="Add Friends" id="9Yo-69-RdH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Duc-x0-Bhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2185" y="-452"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="SLF-fB-Dib">
             <objects>
                 <viewController id="N4C-HR-Cdx" customClass="FourthViewController" customModule="ShopApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -199,14 +199,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Xho-jK-999"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="Xho-jK-999"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Unf-Ff-plk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2185" y="252"/>
         </scene>
-        <!--Item-->
+        <!--Cart-->
         <scene sceneID="Yzu-th-aKG">
             <objects>
                 <viewController id="MKu-PB-Nqg" customClass="FifthViewController" customModule="ShopApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -260,7 +260,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="TEz-Wc-bdj"/>
+                    <tabBarItem key="tabBarItem" title="Cart" id="TEz-Wc-bdj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="myCartTableview" destination="jG5-8b-Mgz" id="5Dh-fr-dIS"/>
