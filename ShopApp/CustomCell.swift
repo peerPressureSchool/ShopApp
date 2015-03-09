@@ -67,11 +67,11 @@ class CustomCell: UITableViewCell {
             
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
-                println(self.productNameLabel.text)
+                println("Add \(self.productNameLabel.text) to cart")
                 //write code to add to cart
                 //write code to drag cell while swiping
             case UISwipeGestureRecognizerDirection.Left:
-                println("Swiped left")
+                println("Like \(self.productNameLabel.text) on the social networks")
                 //write code to add to share
                 //write code to drag cell while swiping
             default:
