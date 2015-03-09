@@ -15,10 +15,6 @@
 		027606CC1A8FB299008A993B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027606CA1A8FB299008A993B /* LaunchScreen.xib */; };
 		027606D81A8FB299008A993B /* ShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606D71A8FB299008A993B /* ShopAppTests.swift */; };
 		027606E21A8FB503008A993B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606E11A8FB503008A993B /* CustomCell.swift */; };
-		027606E61A8FBBCD008A993B /* candle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606E51A8FBBCD008A993B /* candle.jpeg */; };
-		027606E81A8FBED4008A993B /* necklace.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606E71A8FBED4008A993B /* necklace.jpeg */; };
-		027606EA1A8FD527008A993B /* lipstick.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606E91A8FD527008A993B /* lipstick.jpeg */; };
-		027606EC1A8FD6A5008A993B /* blouse.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 027606EB1A8FD6A5008A993B /* blouse.jpeg */; };
 		027606F01A901843008A993B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606EF1A901843008A993B /* ThirdViewController.swift */; };
 		027606F31A91031C008A993B /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606F21A91031C008A993B /* FourthViewController.swift */; };
 		027606FC1A91492F008A993B /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027606FB1A91492F008A993B /* CartCell.swift */; };
@@ -28,6 +24,7 @@
 		02EDD4371A92E00900180D4F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD4361A92E00900180D4F /* DataController.swift */; };
 		02EDD43B1A94457800180D4F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDD43A1A94457800180D4F /* Product.swift */; };
 		A124B9371AAA0F450014A23C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124B9361AAA0F450014A23C /* LoginViewController.swift */; };
+		A14A42041AAD0718003D19EE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14A42031AAD0718003D19EE /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +50,6 @@
 		027606D61A8FB299008A993B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027606D71A8FB299008A993B /* ShopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAppTests.swift; sourceTree = "<group>"; };
 		027606E11A8FB503008A993B /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		027606E51A8FBBCD008A993B /* candle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candle.jpeg; sourceTree = "<group>"; };
-		027606E71A8FBED4008A993B /* necklace.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = necklace.jpeg; sourceTree = "<group>"; };
-		027606E91A8FD527008A993B /* lipstick.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lipstick.jpeg; sourceTree = "<group>"; };
-		027606EB1A8FD6A5008A993B /* blouse.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blouse.jpeg; sourceTree = "<group>"; };
 		027606EF1A901843008A993B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		027606F21A91031C008A993B /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		027606FB1A91492F008A993B /* CartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
@@ -66,6 +59,8 @@
 		02EDD4361A92E00900180D4F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		02EDD43A1A94457800180D4F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../Product.swift; sourceTree = "<group>"; };
 		A124B9361AAA0F450014A23C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A14A42031AAD0718003D19EE /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		A14A42051AAD0D75003D19EE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02EDD42F1A918C9700180D4F /* CoreData.framework in Frameworks */,
+				A14A42041AAD0718003D19EE /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +114,9 @@
 				027606C51A8FB299008A993B /* Main.storyboard */,
 				02EDD4311A918F1200180D4F /* ShopAppModel.xcdatamodeld */,
 				02EDD43A1A94457800180D4F /* Product.swift */,
-				02EDD4301A918CB500180D4F /* Frameworks */,
 				027606C81A8FB299008A993B /* Images.xcassets */,
 				027606CA1A8FB299008A993B /* LaunchScreen.xib */,
+				02EDD4301A918CB500180D4F /* Frameworks */,
 				027606BD1A8FB299008A993B /* Supporting Files */,
 			);
 			path = ShopApp;
@@ -129,11 +125,8 @@
 		027606BD1A8FB299008A993B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				027606E51A8FBBCD008A993B /* candle.jpeg */,
-				027606E71A8FBED4008A993B /* necklace.jpeg */,
-				027606E91A8FD527008A993B /* lipstick.jpeg */,
-				027606EB1A8FD6A5008A993B /* blouse.jpeg */,
 				027606BE1A8FB299008A993B /* Info.plist */,
+				A14A42051AAD0D75003D19EE /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +194,7 @@
 		02EDD4301A918CB500180D4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A14A42031AAD0718003D19EE /* FacebookSDK.framework */,
 				02EDD42E1A918C9700180D4F /* CoreData.framework */,
 			);
 			name = Frameworks;
@@ -295,12 +289,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027606E81A8FBED4008A993B /* necklace.jpeg in Resources */,
-				027606EC1A8FD6A5008A993B /* blouse.jpeg in Resources */,
 				027606C71A8FB299008A993B /* Main.storyboard in Resources */,
 				027606CC1A8FB299008A993B /* LaunchScreen.xib in Resources */,
-				027606E61A8FBBCD008A993B /* candle.jpeg in Resources */,
-				027606EA1A8FD527008A993B /* lipstick.jpeg in Resources */,
 				027606C91A8FB299008A993B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,9 +445,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/boris/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = ShopApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShopApp/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -465,9 +460,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/boris/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = ShopApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShopApp/Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="630" y="-1102"/>
+            <point key="canvasLocation" x="766" y="-1122"/>
         </scene>
         <!--Friends-->
         <scene sceneID="wg7-f3-ORb">
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486" y="-884"/>
+            <point key="canvasLocation" x="1422" y="-1122"/>
         </scene>
         <!--Add Friends-->
         <scene sceneID="Hvg-3G-1d5">
@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Duc-x0-Bhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2185" y="-452"/>
+            <point key="canvasLocation" x="2077" y="-1122"/>
         </scene>
         <!--Profile-->
         <scene sceneID="SLF-fB-Dib">
@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Unf-Ff-plk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2185" y="252"/>
+            <point key="canvasLocation" x="2705" y="-1122"/>
         </scene>
         <!--Cart-->
         <scene sceneID="Yzu-th-aKG">
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1C5-ed-ZK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="1057"/>
+            <point key="canvasLocation" x="3340" y="-1122"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="UI2-gP-6Ph">
@@ -298,6 +298,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2O-oD-H0e">
                                 <rect key="frame" x="150" y="99" width="300" height="255"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhM-Dk-G3l" customClass="FBLoginView">
+                                <rect key="frame" x="200" y="461" width="200" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.729411780834198" green="0.92549026012420654" blue="0.95294123888015747" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -317,6 +321,7 @@
                     </view>
                     <connections>
                         <outlet property="colorView" destination="vjr-dP-rLa" id="rs5-Ay-LYB"/>
+                        <outlet property="fbLoginView" destination="xhM-Dk-G3l" id="1XP-bZ-BCx"/>
                         <outlet property="loginImageView" destination="d2O-oD-H0e" id="0Ba-gC-9Rp"/>
                         <outlet property="pageControl" destination="Feg-j8-IKQ" id="SBK-hF-xqT"/>
                         <segue destination="49e-Tb-3d3" kind="presentation" identifier="loginSegue" id="g6e-RY-xmO"/>
@@ -324,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKf-eW-b0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-776" y="96"/>
+            <point key="canvasLocation" x="1232" y="-2296"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -346,7 +351,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="2016" y="-2296"/>
         </scene>
     </scenes>
     <resources>
