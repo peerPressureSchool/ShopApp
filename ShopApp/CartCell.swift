@@ -24,6 +24,14 @@ class CartCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.addGestureRecognizer(swipeRight)
+        
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.addGestureRecognizer(swipeLeft)
     }
     
     //populate cell2
@@ -35,5 +43,25 @@ class CartCell: UITableViewCell {
         self.productImageInCartImage.image = UIImage(named: productImageName)
                
     }
-
+    
+    // actions
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                println("Buy \(self.productNameInCartLabel.text)")
+                //write code to purchase product -- first an alert then a Swipe call
+                //write code to drag cell while swiping
+            case UISwipeGestureRecognizerDirection.Left:
+                println("Remove \(self.productNameInCartLabel.text) from cart")
+                //write code to remove product from cart tuple
+                //write code to drag cell while swiping
+            default:
+                break
+            }
+        }
+    }
 }

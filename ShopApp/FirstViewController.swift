@@ -19,17 +19,23 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var productArray: [Product] = [Product]()
     var cartArray: [Product] = [Product]()
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     var apiSearchForBestBuyProducts : [(name:String, sku:String, productDesc: String, price: Double, imgUrl : UIImage)] = []
     
     var jsonResponse:NSDictionary!
     
     var dataController = DataController()
-    
+
+    //paramters to build toggle of call
+    var url = NSURL()
+    var departmentID = arc4random_uniform(10) + 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         myTableView.backgroundColor = UIColor.whiteColor()
+       
         
         //call function to make API call, for loop both build product array and saves product to CD
         self.setUpProducts()
@@ -72,11 +78,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     func makeRequest () {
         
         //create random number to pic a dept
-        var departmentID = arc4random_uniform(10) + 1
+        
         
         //create call
-        let url = NSURL(string: "http://api.remix.bestbuy.com/v1/products(departmentId=\(departmentID))?show=sku,name,description,regularPrice,longDescription,largeImage&pageSize=15&page=1&apiKey=\(kApiKey)&format=json")
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
+      
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
         
         //decode return data
         var stringData = NSString(data: data, encoding: NSUTF8StringEncoding)
@@ -115,7 +121,22 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         })
         //execute call
         task.resume()
-
+    }
+    
+    // toggling across feeds -- might need to add makeRequest()
+    
+    @IBAction func indexChanged(sender: UISegmentedControl) {
+        
+        switch segmentedControl.selectedSegmentIndex {
+            case 0: url = NSURL(string: "http://api.remix.bestbuy.com/v1/products(departmentId=\(departmentID))?show=sku,name,description,regularPrice,longDescription,largeImage&pageSize=15&page=1&apiKey=\(kApiKey)&format=json")!;
+                makeRequest();
+            
+            //should change this call to something else for "trending area"
+            case 1: url = NSURL(string: "http://api.remix.bestbuy.com/v1/products(departmentId=\(departmentID))?show=sku,name,description,regularPrice,longDescription,largeImage&pageSize=15&page=1&apiKey=\(kApiKey)&format=json")!;
+                makeRequest();
+            
+        default: break;
+        }
     }
 }
 

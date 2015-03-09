@@ -18,20 +18,13 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
         // Do any additional setup after loading the view.
         
-       // self.setUpCartItems()
-        println(cartItemsArray)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    func setUpCartItems()
-//    {
-//        
-//    }
-//    
     
     //tableview functions
     
