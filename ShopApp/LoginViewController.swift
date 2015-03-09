@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBLoginViewDelegate {
 
     
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var loginImageView: UIImageView!
+    @IBOutlet weak var fbLoginView: FBLoginView!
     
     
     /// images that correspond to the selected page.
@@ -44,6 +46,11 @@ class LoginViewController: UIViewController {
         swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
         self.view.addGestureRecognizer(swipeLeft)
         
+        
+        // Facebook Stuff
+        self.fbLoginView.delegate = self
+        self.fbLoginView.readPermissions = ["public_profile", "publish_actions", "email", "user_friends"]
+        
     }
 
     
@@ -51,6 +58,32 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: Facebook
+    
+    func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
+    }
+    
+    func loginViewFetchedUserInfo(loginView: FBLoginView!, user: FBGraphUser!) {
+        
+        println(user)
+        
+        let userImageURL = "https://graph.facebook.com/\(user.objectID)/picture?type=small"
+        let url = NSURL(string: userImageURL)
+        let imageData = NSData(contentsOfURL: url!)
+        let image = UIImage(data: imageData!)
+
+    }
+    
+    func loginViewShowingLoggedOutUser(loginView: FBLoginView!) {
+    }
+    
+    func loginView(loginView: FBLoginView!, handleError error: NSError!) {
+        println("Error: \(error.localizedDescription)")
+    }
+    
+    
     
 
     // MARK: Configuration
@@ -70,8 +103,11 @@ class LoginViewController: UIViewController {
     }
 
     
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> borisBranch
     // MARK: Recognize Swipe
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
