@@ -325,13 +325,13 @@
                                     <action selector="loginButtonPressed:" destination="idq-1c-8iT" eventType="touchUpInside" id="aCD-iz-wq2"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2O-oD-H0e">
-                                <rect key="frame" x="150" y="99" width="300" height="255"/>
-                            </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5K-gZ-lVy" customClass="FBLoginView">
                                 <rect key="frame" x="200" y="461" width="200" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2O-oD-H0e">
+                                <rect key="frame" x="200" y="100" width="200" height="180"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.729411780834198" green="0.92549026012420654" blue="0.95294123888015747" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -340,7 +340,6 @@
                             <constraint firstItem="l5K-gZ-lVy" firstAttribute="top" secondItem="Feg-j8-IKQ" secondAttribute="bottom" constant="27" id="Rxz-RX-zF6"/>
                             <constraint firstItem="rjQ-AB-mKJ" firstAttribute="top" secondItem="l5K-gZ-lVy" secondAttribute="bottom" constant="8" id="bca-1w-9C1"/>
                             <constraint firstItem="u6s-1V-Kda" firstAttribute="top" secondItem="rjQ-AB-mKJ" secondAttribute="bottom" constant="34" id="cy2-h5-et3"/>
-                            <constraint firstItem="Feg-j8-IKQ" firstAttribute="top" secondItem="d2O-oD-H0e" secondAttribute="bottom" constant="43" id="iKS-Ou-b9L"/>
                             <constraint firstItem="rjQ-AB-mKJ" firstAttribute="top" secondItem="Feg-j8-IKQ" secondAttribute="bottom" constant="85" id="nIy-qo-YXy"/>
                             <constraint firstItem="l5K-gZ-lVy" firstAttribute="centerX" secondItem="Feg-j8-IKQ" secondAttribute="centerX" id="nhN-e2-8fO"/>
                             <constraint firstItem="Feg-j8-IKQ" firstAttribute="centerX" secondItem="rjQ-AB-mKJ" secondAttribute="centerX" constant="-0.5" id="w89-r1-Zyp"/>

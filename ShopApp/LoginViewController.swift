@@ -18,13 +18,17 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
     @IBOutlet weak var fbLoginView: FBLoginView!
     
     
+    var cloudImageView: UIImageView = UIImageView(frame: CGRectMake(45, 150, 300, 200))
+    
+    
     /// images that correspond to the selected page.
-        
+    
     let images = [
         UIImage(named: "cloud1.png"),
         UIImage(named: "cloud2.png"),
         UIImage(named: "cloud3.png")
     ]
+    
     
     // MARK: View Life Cycle
     
@@ -32,9 +36,7 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.loginImageView.image = images[0]
-//        self.loginImageView.frame = CGRectMake(0,0,100,100)
-//        self.loginImageView.contentMode = .ScaleAspectFit
+        self.view.addSubview(cloudImageView)
         
         configurePageControl()
         
@@ -93,7 +95,7 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
         
         pageControl.numberOfPages = images.count
         pageControl.currentPage = 0
-        self.loginImageView.image = images[pageControl.currentPage]        
+        self.cloudImageView.image = images[pageControl.currentPage]
         
         pageControl.tintColor = UIColor.blueColor()
         pageControl.pageIndicatorTintColor = UIColor.greenColor()
@@ -112,12 +114,12 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 println("Swiped right")
-                self.loginImageView.image = images[pageControl.currentPage--]
+                self.cloudImageView.image = images[pageControl.currentPage--]
                 println("The page control changed its current page to \(pageControl.currentPage).")
             
             case UISwipeGestureRecognizerDirection.Left:
                 println("Swiped left")
-                self.loginImageView.image = images[pageControl.currentPage++]
+                self.cloudImageView.image = images[pageControl.currentPage++]
                 println("The page control changed its current page to \(pageControl.currentPage).")
             
             default:
@@ -126,7 +128,7 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
             }
         }
     
-        self.loginImageView.image = images[pageControl.currentPage]
+        self.cloudImageView.image = images[pageControl.currentPage]
     
     }
     
